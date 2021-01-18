@@ -9,7 +9,7 @@ class HeaderCom extends React.Component {
           <h1>Verbose Enigma</h1>
         </div>
         <div className="header_optDiv">
-          <p>what</p>
+          <p>what am I doing?</p>
         </div>
       </header>
     );
