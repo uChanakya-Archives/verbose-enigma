@@ -1,0 +1,22 @@
+footer {
+  background-color: #282c34;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: minmax(150px,350px) auto;
+  column-gap: 50px;
+  grid-template-areas: "what link";
+}
+
+.footer_whatDiv {
+  grid-area: what;
+  padding: 5px;
+}
+
+.footer_linkDiv {
+  grid-area: link;
+  padding: 5px;
+}
+
+.linksList {
+  list-style: none;
+}

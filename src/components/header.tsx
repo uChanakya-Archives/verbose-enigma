@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/headerCom.css";
+import "../styles/header.css";
 
-class HeaderCom extends React.Component {
+class HeaderX extends React.Component {
   render() {
     return (
       <header>
@@ -15,4 +15,4 @@ class HeaderCom extends React.Component {
     );
   }
 }
-export default HeaderCom;
+export default HeaderX;

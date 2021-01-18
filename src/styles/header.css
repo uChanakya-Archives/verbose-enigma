@@ -2,12 +2,14 @@
 
 header {
   background-color: #282c34;
+  margin: 0;
   padding: 7px 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 50px 280px auto 135px;
+  grid-template-columns: 10px 260px auto 135px;
   column-gap: 7px;
   grid-template-areas: "icon head . opt";
+  box-shadow: 0 0 100px #ff4500;
 }
 .header_headingDiv {
   grid-area: head;
@@ -22,8 +24,13 @@ header {
 
 .header_headingDiv h1 {
   margin: 0;
-  padding: 7px 15px;
+  padding: 7px 7px;
   font-size: 32px;
   font-family: "Open Sans", sans-serif;
   color: #ff4500;
+}
+@media screen and (max-width: 500px) {
+  .header_headingDiv h1 {
+    padding: 4px;
+  }
 }

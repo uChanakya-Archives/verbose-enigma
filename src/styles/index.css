@@ -10,3 +10,9 @@ body {
 body {
   min-width: 340px;
 }
+
+#root {
+  min-width: 360px;
+  box-sizing: border-box;
+  height: 100%;
+}
