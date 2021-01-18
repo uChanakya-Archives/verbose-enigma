@@ -1,7 +1,8 @@
 {
   "name": "verbose-enigma",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
+  "homepage": "https://u-c-s.github.io/verbose-enigma/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
