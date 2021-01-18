@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+//import App from "./App";
+import HeaderCom from "./components/headerCom";
+
 import "./styles/index.css";
-import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HeaderCom />
   </React.StrictMode>,
   document.getElementById("root")
 );
