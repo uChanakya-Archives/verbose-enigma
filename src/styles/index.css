@@ -14,5 +14,8 @@ body {
 #root {
   min-width: 360px;
   box-sizing: border-box;
-  height: 100%;
+  display: grid;
+  grid-template-rows: 74px minmax(71.5vh, auto) 140px;
+  grid-template-areas: "header" "main" "footer";
+  row-gap: 5px;
 }

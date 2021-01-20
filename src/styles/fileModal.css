@@ -1,7 +1,8 @@
 main {
-  margin: 2px 0;
+  grid-area: main;
+  margin: 0;
   background-color: #515969;
-  height: 73.5vh;
+  min-height: auto;
   box-shadow: 0 0 30px #282c34;
 }
 

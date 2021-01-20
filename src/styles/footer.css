@@ -1,8 +1,9 @@
 footer {
+  grid-area: footer;
   background-color: #282c34;
   padding: 0px 20px;
   display: grid;
-  grid-template-columns: minmax(150px,350px) auto;
+  grid-template-columns: minmax(150px, 350px) auto;
   column-gap: 50px;
   grid-template-areas: "what link";
 }

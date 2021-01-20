@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
 
 header {
+  grid-area: header;
   background-color: #282c34;
   margin: 0;
   padding: 7px 20px;

@@ -1,0 +1,26 @@
+.AlltheCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.post_card {
+  margin-bottom: 20px;
+  background-color: azure;
+  border: 2px solid black;
+  width: 20%;
+  min-width: 210px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.post_card h5 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.post_card p {
+  margin: 0;
+  font-size: 12px;
+}

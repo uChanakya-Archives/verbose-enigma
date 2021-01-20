@@ -1,37 +1,38 @@
 import React from "react";
+import RenderCards from "./cards";
+
 import "../styles/fileModal.css";
+import { RedditSavedPostsJson } from "../app/interfaces";
 
 let JSONfile: object;
 
-class FileInputModal extends React.Component {
+class FileInputModal extends React.Component<{}, { fileAccepted: boolean }> {
   fileInput: any;
-  fAcc: boolean;
   constructor(props: any) {
     super(props);
     this.state = {
       fileAccepted: false,
     };
     this.fileInput = React.createRef();
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.fAcc = false;
+    //this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(e: any) {
+  handleSubmit = (e: any) => {
     e.preventDefault();
-    var x = new FileReader();
-    x.readAsText(this.fileInput.current.files[0]);
-    x.onload = () => {
-      let JSONfileText = x.result as string;
+    var fileAPI = new FileReader();
+    fileAPI.readAsText(this.fileInput.current.files[0]);
+    fileAPI.onload = () => {
+      let JSONfileText = fileAPI.result as string;
       JSONfile = JSON.parse(JSONfileText);
-      this.fAcc = true;
       this.setState({ fileAccepted: true });
     };
-  }
+  };
 
   render() {
-    const { fAcc, handleSubmit, fileInput } = this;
+    const { handleSubmit, fileInput } = this;
+    const { fileAccepted } = this.state;
 
-    if (!fAcc) {
+    if (!fileAccepted) {
       return (
         <main>
           <form onSubmit={handleSubmit}>
@@ -42,11 +43,9 @@ class FileInputModal extends React.Component {
         </main>
       );
     } else {
-      //@ts-ignore
-      let meow = JSONfile.data.children.length;
       return (
         <main>
-          <p>{meow}</p>
+          <RenderCards jsonFile={JSONfile as RedditSavedPostsJson} />
         </main>
       );
     }
