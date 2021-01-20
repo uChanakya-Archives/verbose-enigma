@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/verbose-enigma/static/css/main.c266cb4d.chunk.css",
-    "main.js": "/verbose-enigma/static/js/main.0fa1fb24.chunk.js",
-    "main.js.map": "/verbose-enigma/static/js/main.0fa1fb24.chunk.js.map",
+    "main.css": "/verbose-enigma/static/css/main.1c32370b.chunk.css",
+    "main.js": "/verbose-enigma/static/js/main.068ae4e6.chunk.js",
+    "main.js.map": "/verbose-enigma/static/js/main.068ae4e6.chunk.js.map",
     "runtime-main.js": "/verbose-enigma/static/js/runtime-main.735def8d.js",
     "runtime-main.js.map": "/verbose-enigma/static/js/runtime-main.735def8d.js.map",
-    "static/js/2.fccc25dd.chunk.js": "/verbose-enigma/static/js/2.fccc25dd.chunk.js",
-    "static/js/2.fccc25dd.chunk.js.map": "/verbose-enigma/static/js/2.fccc25dd.chunk.js.map",
+    "static/js/2.33e0a8f5.chunk.js": "/verbose-enigma/static/js/2.33e0a8f5.chunk.js",
+    "static/js/2.33e0a8f5.chunk.js.map": "/verbose-enigma/static/js/2.33e0a8f5.chunk.js.map",
     "index.html": "/verbose-enigma/index.html",
-    "static/css/main.c266cb4d.chunk.css.map": "/verbose-enigma/static/css/main.c266cb4d.chunk.css.map",
-    "static/js/2.fccc25dd.chunk.js.LICENSE.txt": "/verbose-enigma/static/js/2.fccc25dd.chunk.js.LICENSE.txt"
+    "static/css/main.1c32370b.chunk.css.map": "/verbose-enigma/static/css/main.1c32370b.chunk.css.map",
+    "static/js/2.33e0a8f5.chunk.js.LICENSE.txt": "/verbose-enigma/static/js/2.33e0a8f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.735def8d.js",
-    "static/js/2.fccc25dd.chunk.js",
-    "static/css/main.c266cb4d.chunk.css",
-    "static/js/main.0fa1fb24.chunk.js"
+    "static/js/2.33e0a8f5.chunk.js",
+    "static/css/main.1c32370b.chunk.css",
+    "static/js/main.068ae4e6.chunk.js"
   ]
 }
