@@ -1,38 +1,41 @@
 import React from "react";
 import "../styles/fileModal.css";
 
+let JSONfile: object;
+
 class FileInputModal extends React.Component {
   fileInput: any;
   fAcc: boolean;
-  JSONfile: object;
   constructor(props: any) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.fAcc = false;
-    this.JSONfile = {};
-    this.fileInput = React.createRef();
     this.state = {
       fileAccepted: false,
     };
+    this.fileInput = React.createRef();
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.fAcc = false;
   }
+
   handleSubmit(e: any) {
     e.preventDefault();
     var x = new FileReader();
     x.readAsText(this.fileInput.current.files[0]);
     x.onload = () => {
-      alert(this.fileInput.current.files[0].name); //@ts-ignore
-      let JSONfileText = x.result?.toString(); //@ts-ignore
-      this.JSONfile = JSON.parse(JSONfileText);
+      let JSONfileText = x.result as string;
+      JSONfile = JSON.parse(JSONfileText);
       this.fAcc = true;
       this.setState({ fileAccepted: true });
     };
   }
+
   render() {
-    if (!this.fAcc) {
+    const { fAcc, handleSubmit, fileInput } = this;
+
+    if (!fAcc) {
       return (
         <main>
-          <form onSubmit={this.handleSubmit}>
-            <input type="file" ref={this.fileInput} accept=".json,.txt"></input>
+          <form onSubmit={handleSubmit}>
+            <input type="file" ref={fileInput} accept=".json,.txt"></input>
             <input type="submit" />
           </form>
           <h2>PAGE UNDER CONSTRUCTION</h2>
@@ -40,7 +43,7 @@ class FileInputModal extends React.Component {
       );
     } else {
       //@ts-ignore
-      let meow = this.JSONfile.data.children.length;
+      let meow = JSONfile.data.children.length;
       return (
         <main>
           <p>{meow}</p>
